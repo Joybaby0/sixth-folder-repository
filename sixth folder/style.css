@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 80vw;
+    /* background-color: red; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+}
+
+
+
+.image{
+    height: 300px;
+}
+
+.giveaway{
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.deadline{
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+
+.deadline-format{
+    background-color: black;
+    color: white;
+    margin-top: 3rem;
+    width: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width : 1000px){
+    #container{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
+
